@@ -17,7 +17,7 @@ obj.fun1() # To call Method we are using object.methodName
   ..............................................................................................................................................................
         2.      
    class Dog:
-    species = "animal"     # Class Attribute ...............  this atribute allocates space only once in the memory no matter how many times an object is created
+    species = "animal"     # Class Attribute ...............  this atribute allocates space only once in the memory no matter how many times an object is created,it can be accesed by ClassName.attributename or objName.attributename
 
     def __init__(self, name, age):
         self.name = name  # Instance Attribute
