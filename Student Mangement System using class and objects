@@ -1,0 +1,52 @@
+#student management system
+class Student:#class 
+    college="sridevi Womens Engineering college" #class attribute
+    def __init__(self,name,marks):               #parameterized constructor :instansiated when the object is created
+        ## self refers to current object
+        self.name=name                           #instance attributes
+        self.marks=marks
+    def Display(self):                           #instance methods
+        print("Student Name:",self.name)         #self=instance of class, that is used to access and modify the attribrutes inside a method
+        print("marks:",self.marks)               #self and obj points to same memory location 
+    def Grade(self):
+        if self.marks>=90:
+            print("A grade")
+        elif self.marks >=75:
+            print("B grade")
+        else:
+            print("C Grade")
+
+s1=Student("Nikitha", 90)                        #object creation
+s2=Student("Sreeja",78)
+s3=Student("Keerthana",80)
+
+print(Student.college)                          #class Attribute = clsName.AttributeName or objName.Attribute name
+s1.Display()                                    #obj.methodName() #works as self.MethodName()
+s1.Grade()
+
+print()
+print(Student.college)
+s2.Display()
+s2.Grade()
+
+print()
+print(Student.college)
+s3.Display()
+s3.Grade()
+...............................................................
+
+#OUTPUT:
+sridevi Womens Engineering college
+Student Name: Nikitha
+marks: 90
+A grade
+
+sridevi Womens Engineering college
+Student Name: Sreeja
+marks: 78
+B grade
+
+sridevi Womens Engineering college
+Student Name: Keerthana
+marks: 80
+B grade
