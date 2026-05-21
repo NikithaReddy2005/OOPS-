@@ -1,0 +1,26 @@
+# Constructor (__init__) 
+# It is used to create Instance variables
+#whenever a object is created an constructor is instansiated by default 
+class Hey():
+    def __init__(self):  #default constructor
+        self.a=10 
+        self.b=20 
+    def fun1(self):
+        print(self.a) 
+    def fun2(self):
+        print(self.b) 
+ob = Hey() 
+ob.fun2() 
+#output:
+20
+...................................................................................
+class Student:
+    def __init__(self,name,rollno): #parameterized constructor
+        self.name=name
+        self.roll=rollno
+s1=Student("nikki",48)
+print(s1)
+print(s1.name,s1.roll)
+#output:
+<__main__.Student object at 0x000001FC6E0330A0>
+nikki 48
